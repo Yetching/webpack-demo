@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "npx webpack serve -c ./config/webpack.config.dev.js",
+    "build": "npx webpack -c ./config/webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "webpack-merge": "^5.8.0"
+  }
+}
