@@ -1,3 +1,4 @@
+const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -24,6 +25,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
+    new ESLintWebpackPlugin(),
   ],
 
   devServer: {
@@ -34,6 +36,7 @@ module.exports = {
     // 错误遮罩层
     client: {
       overlay: false,
+      progress: true,
     },
   },
 };
